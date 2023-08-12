@@ -17,7 +17,7 @@ function generatePassword() {  // Your code goes here.
   var lowerCase = "abcdefghijklmnopqrstuvwxyz"
   var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   var numeric = "1234567890"
-  var special = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~ "
+  var special = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~ " // I had to remove quotes and the / symbol because they were not being treated as string for some reason.
 
   // Turn the variables into arrays and create an additional array to hold their combined values.
   var lowerCaseArray = lowerCase.split("")
@@ -50,8 +50,10 @@ function generatePassword() {  // Your code goes here.
     return;
   }
 
-  // Randomlly select elements from the combined array to generate the password.
+  // Set the password var to empty before requesting a new password.
   var password = "";
+
+  //Generate a password based on the combined array length.
   for (var i = 0; i < selectLength; i++) {
     var passwordIndex = Math.floor(Math.random() * combinedArray.length);
     password = password + combinedArray[passwordIndex]
