@@ -9,4 +9,8 @@ If the user inputs an invalid character length they will be alerted and prompted
 
 If the user doesn't choose any criteria they will be alerted and prompted again.
 
+GitHub Repo: https://github.com/BenACooper/m3-password-generator
+
+Deployed Project: https://benacooper.github.io/m3-password-generator/
+
 ![Project Screenshot](./assets/images/app-screenshot-for-readme.jpg)
